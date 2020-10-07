@@ -1,0 +1,31 @@
+{
+  "name": "fetch-request-body-to-async-terator",
+  "version": "1.0.0",
+  "description": "Convert the body of a fetch request to an async iterator of bytes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RangerMauve/fetch-request-body-to-async-terator.git"
+  },
+  "keywords": [
+    "fetch",
+    "body",
+    "async",
+    "iterator"
+  ],
+  "author": "rangermauve <ranger@mauve.moe> (https://mauve.moe/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RangerMauve/fetch-request-body-to-async-terator/issues"
+  },
+  "homepage": "https://github.com/RangerMauve/fetch-request-body-to-async-terator#readme",
+  "dependencies": {
+    "stream-to-iterator": "^3.0.3"
+  },
+  "devDependencies": {
+    "tape": "^5.0.1"
+  }
+}
