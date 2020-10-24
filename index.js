@@ -1,4 +1,4 @@
-const nodeStreamToIterator = require('stream-to-iterator')
+const nodeStreamToIterator = require('stream-async-iterator')
 
 module.exports = function bodyToIterator (body, ses) {
   // If there's no body, give an empty stream
