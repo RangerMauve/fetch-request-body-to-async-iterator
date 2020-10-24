@@ -1,6 +1,6 @@
 {
   "name": "fetch-request-body-to-async-iterator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert the body of a fetch request to an async iterator of bytes",
   "main": "index.js",
   "scripts": {
