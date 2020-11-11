@@ -3,6 +3,9 @@
   "version": "1.0.1",
   "description": "Convert the body of a fetch request to an async iterator of bytes",
   "main": "index.js",
+  "browser": {
+    "fs": false
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
