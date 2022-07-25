@@ -4,6 +4,10 @@ module.exports = function bodyToIterator (body, ses) {
   // If there's no body, give an empty stream
   if (!body) return arrayToIterator([])
 
+  if(Buffer.isBuffer(body)) {
+    return intoIterator(body)
+  }
+
   // Probably a node stream
   if (isFn(body.pipe)) return nodeStreamToIterator(body)
 
@@ -46,7 +50,7 @@ module.exports = function bodyToIterator (body, ses) {
     return nodeStreamToIterator(fs.createReadStream(body.file))
   }
 
-  // Probably a string or a buffer of some sort?
+  // Probably a string of some sort?
   return intoIterator(Buffer.from(body))
 }
 
