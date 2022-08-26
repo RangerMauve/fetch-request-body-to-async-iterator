@@ -4,7 +4,11 @@ module.exports = function bodyToIterator (body, ses) {
   // If there's no body, give an empty stream
   if (!body) return arrayToIterator([])
 
-  if(Buffer.isBuffer(body)) {
+  if (typeof body === 'string') {
+    return intoIterator(Buffer.from(body))
+  }
+
+  if (Buffer.isBuffer(body)) {
     return intoIterator(body)
   }
 
